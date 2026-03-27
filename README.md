@@ -79,7 +79,47 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11:
   Stop
 # Program:
+#include <stdio.h>
+
+// Function declaration
+void display(int n);
+
+int main() {
+    int input;
+
+    // Step 4: Read input from user
+    printf("Enter an integer: ");
+    scanf("%d", &input);
+
+    // Step 5: Call function five times
+    display(input);
+    display(input);
+    display(input);
+    display(input);
+    display(input);
+
+    return 0;
+}
+
+// Function definition
+void display(int n) {
+    // Static variable initialized only once
+    static float base = 100.25;
+
+    // Step 6a: Calculate sum
+    float result = base + n;
+
+    // Step 6b: Display result
+    printf("Result: %.2f\n", result);
+
+    // Step 6c: Increase base value
+    base = base + 100.25;
+}
 # Output:
+<img width="553" height="146" alt="Screenshot 2026-03-27 084411" src="https://github.com/user-attachments/assets/be0b8d6e-c8d1-464e-ae53-84f0f0e247d8" />
+
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
